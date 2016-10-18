@@ -1,0 +1,12 @@
+<center><h1>Smallify : Shorten URLs</h1></center>
+<hr/>
+<form method="POST" action="{% url 'smallify:detail' %}">
+{% csrf_token %}
+	<center><label for="original_url">Enter your URL : </label></center><br/>
+	<center><input type="text" style="width:75%" name="original_url" ></center><br/>
+	<center><input type="submit" value="smallify!"></center>
+</form>
+<br/>
+{% if error_message %}
+	<center><strong>{{ error_message }}</strong></center>
+{% endif %}
