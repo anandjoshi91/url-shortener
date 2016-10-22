@@ -1,5 +1,5 @@
 <h1>Details</h1>
 <hr/>
 
-<p>Original URL = {{ url.original_url }}</p>
-<p>Shortened URL = {{ url.shortened_url }}</p>
+<p>Original URL = <a href="{{ url.original_url }}">{{ url.original_url }}</a></p>
+<p>Shortened URL = <a href="{% url 'smallify:redirect' url.shortened_url%}">{{ url.shortened_url }}</a></p>

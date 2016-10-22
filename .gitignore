@@ -58,6 +58,10 @@ docs/_build/
 target/
 
 
+# Db
+
+*.sqlite*
+
 # pdev
 
 .project
