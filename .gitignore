@@ -61,6 +61,7 @@ target/
 # Db
 
 *.sqlite*
+db.sqlite3
 
 # pdev
 
