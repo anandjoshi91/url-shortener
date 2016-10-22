@@ -21,7 +21,7 @@ class URL(models.Model):
             h = (h*16777619)^ord(k)
         
         # Return 8 bit URL
-        return base64.encode(h%140737488355329)
+        return base64.encode(h%281474976710656)
     
     def __str__(self):
         return models.Model.__str__(self)  
